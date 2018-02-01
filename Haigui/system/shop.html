@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/calendar.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jsAddress.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <section class="fixed-nav-left">
+    <div class="fnl-header"><img src="img/header.jpg"></div>
+    <div class="fnl-note text-center">微商会总后台管理</div>
+    <div class="fnl-list">
+      <ul>
+        <li><a href="index.html"><span><img src="img/fnl-1.png" alt=""></span>协会管理</a></li>
+        <li><a href="shop.html" class="active"><span><img src="img/fnl-2.png" alt=""></span>积分商城管理</a></li>
+        <li><a href=""><span><img src="img/fnl-1.png" alt=""></span>金融板块管理</a></li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <section class="right-main">
+    <div class="r-top"><span class="pull-right"><img src="img/header.jpg" class="r-top-headimg">管理员：某某 <a href="">注销</a></span> 2017-11-24 礼拜五 12：03</div>
+    <div class="first-title">积分商城管理</div>
+    <div class="first-btm-all">
+      <a href="add-pro.html" ><span class="first-btm">新增商品</span></a>
+      <a href="edit-cata.html" ><span class="first-btm">分类管理</span></a>
+      <a href="shop-cata.html" ><span class="first-btm">分类管理2</span></a>
+    </div>
+    
+
+    <div class="r-chage">
+
+     <form class="search" id="search" method="post" action="#">
+        <p class="pull-left pd15">商品类型:
+          <select  class="form-control" style="width:140px; display: initial;">
+          <option value="">请选择</option>
+          <option value="">电子产品</option>
+          <option value="">零食</option>
+          <option value="">优惠卷</option>
+        </select>
+      </p>
+         
+          
+          <input name="search" class="r-search" type="text" value="" placeholder="搜索"> 
+          <input type="submit" class="r-chage-btn" value="查询">
+      </form>
+     
+     
+
+    </div>
+    <div class="clearfix"></div>
+	<div class="pd15">
+    <div class="shop-list">
+      <div class="sl-block">
+        <div class="slb-title">电子产品</div>
+        <div class="slb-note">
+          <div class="pull-right"><a href="" class="sl-btn mgt30">删除</a></div>
+          <div class="slbn-img pull-left"><img src="img/shop1.jpg" alt="" class="img200"></div>
+          <div class="slbn-note pull-left">
+              <div class="slbn-note-t">充电宝</div>
+              <div class="slbn-note-n">500积分+10￥兑换</div>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+
+      <div class="sl-block">
+        <div class="slb-title">零食</div>
+        <div class="slb-note">
+          <div class="pull-right"><a href="" class="sl-btn mgt30">删除</a></div>
+          <div class="slbn-img pull-left"><img src="img/shop2.jpg" alt="" class="img200"></div>
+          <div class="slbn-note pull-left">
+              <div class="slbn-note-t">充电宝</div>
+              <div class="slbn-note-n">500积分+10￥兑换</div>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+
+      <div class="sl-block">
+        <div class="slb-title">用品</div>
+        <div class="slb-note">
+          <div class="pull-right"><a href="" class="sl-btn mgt30">删除</a></div>
+          <div class="slbn-img pull-left"><img src="img/shop3.jpg" alt="" class="img200"></div>
+          <div class="slbn-note pull-left">
+              <div class="slbn-note-t">充电宝</div>
+              <div class="slbn-note-n">500积分+10￥兑换</div>
+              <div class="slbn-note-time">2018/10/08 - 2018/02/08</div>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+
+      <div class="sl-block">
+        <div class="slb-title">优惠卷</div>
+        <div class="slb-note">
+          <div class="pull-right"><a href="" class="sl-btn mgt30">删除</a></div>
+          <div class="slbn-img pull-left"><img src="img/shop4.jpg" alt="" class="img200"></div>
+          <div class="slbn-note pull-left">
+              <div class="slbn-note-t">充电宝</div>
+              <div class="slbn-note-n">500积分+10￥兑换</div>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+
+      <div class="sl-block">
+        <div class="slb-title">电子产品</div>
+        <div class="slb-note">
+          <div class="pull-right"><a href="" class="sl-btn mgt30">删除</a></div>
+          <div class="slbn-img pull-left"><img src="img/shop5.jpg" alt="" class="img200"></div>
+          <div class="slbn-note pull-left">
+              <div class="slbn-note-t">充电宝</div>
+              <div class="slbn-note-n">500积分+10￥兑换</div>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+
+
+    </div>
+    
+  </div>
+    
+  </section>
+ 
+
+  </body>
+</html>

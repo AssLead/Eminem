@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/calendar.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <section class="fixed-nav-left">
+    <div class="fnl-header"><img src="img/header.jpg"></div>
+    <div class="fnl-note text-center">微商会后台管理</div>
+    <div class="fnl-list">
+      <ul>
+        <li><a href="index.html" class="active"><span><img src="img/fnl-1.png" alt=""></span>会员管理</a></li>
+        <li><a href="hd1.html"><span><img src="img/fnl-2.png" alt=""></span>活动管理</a></li>
+        <li><a href="hf.html"><span><img src="img/fnl-3.png" alt=""></span>会费管理</a></li>
+        <li><a href="hxgl.html"><span><img src="img/fnl-4.png" alt=""></span>协会管理</a></li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <section class="right-main">
+    <div class="r-top"><span class="pull-right"><img src="img/header.jpg" class="r-top-headimg">管理员：某某 <a href="">注销</a></span> 2017-11-24 礼拜五 12：03</div>
+    <div class="first-title">用户管理</div>
+
+     <div class="line3"></div>
+	   <div class="pd15">
+        <div class="">
+          <form action="#"  method="post">
+            
+            <div class="form-group">
+              <label class="col-sm-1 control-label">会员等级</label>
+              <div class="col-sm-2">
+                <select class="form-control">
+                  <option>请选择</option>
+                  <option value="">会长</option>
+                  <option value="">常务副会长</option>
+                  <option value="">副会长</option>
+                  <option value="">常务理事</option>
+                  <option value="">理事</option>
+                  <option value="">会员</option>
+                  <option value="">游客</option>
+                </select>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+             <div class="form-group">
+              <label class="col-sm-1 control-label">头像</label>
+               <input type="file" id="exampleInputFile" class="col-sm-4">
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+              <label class="col-sm-1 control-label">昵称</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control"  >
+              <p>用户名称不可超过15字符，不可以有特殊符号</p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+              <label class="col-sm-1 control-label">性别</label>
+              <div class="col-sm-2">
+                <select class="form-control">
+                  <option>请选择</option>
+                  <option>男</option>
+                  <option>女</option>
+                </select>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+              <label class="col-sm-1 control-label">手机</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control"  placeholder="">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+              <label class="col-sm-1 control-label">从事行业</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control"  placeholder="">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+              <label class="col-sm-1 control-label">个人简介</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control"  >
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+              <label class="col-sm-1 control-label">兴趣爱好</label>
+              <div class="clearfix"></div>
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="form-group">
+                  <label class="col-sm-1 control-label">体育</label>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                
+                  <a href="javascript:;" class="addplusbtn">+</a>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-1 control-label">音乐</label>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                
+                  <a href="javascript:;" class="addplusbtn">+</a>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-1 control-label">食物</label>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                
+                  <a href="javascript:;" class="addplusbtn">+</a>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-1 control-label">书籍</label>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                
+                  <a href="javascript:;" class="addplusbtn">+</a>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-1 control-label">旅行足迹</label>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-2">
+                     <select class="form-control">
+                        <option>请选择</option>
+                        <option>射击</option>
+                        <option>长跑</option>
+                      </select>
+                  </div>
+                
+                  <a href="javascript:;" class="addplusbtn">+</a>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+             
+            <div class="form-group">
+              <bottom class="col-sm-2 col-sm-offset-1 btn btn-default addp">+添加属性</bottom>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="form-group addp2" style="display: none;">
+              <label class="col-sm-1 control-label">属性名</label>
+              <div class="col-sm-2">
+                <input type="text" class="form-control"  >
+              </div>
+              <div class="col-sm-4">
+                <button type="button" class="btn btn-default addbtm">确定</button>
+                <button type="button" class="btn btn-default addbtm" style="border:1px solid #666666; color: #666; margin-left: 8px;">取消</button>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+
+            <div class="form-group col-sm-12 text-center">
+              <input type="submit" class="btn btn-default addbtm1" style="background:#119e92; color: #fff" value="提交">
+              <input type="reset" class="btn btn-default addbtm1" value="取消">
+            </div>
+
+            <div class="clearfix"></div>
+
+
+
+          </form>
+
+        </div>
+     
+     </div>
+    
+  </section>
+   <script>
+    $(function(){
+      $('.addp').click(function(){
+        $('.addp2').toggle();
+
+
+      })
+    })
+
+   </script>
+
+  </body>
+</html>

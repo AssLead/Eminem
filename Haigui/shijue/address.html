@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>地址列表</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+       <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>body{background: #fff;}</style>
+  </head>
+  <body class="home">
+	 <div class="container">
+      <div class="address">
+          <div class="f18px">收货地址</div>
+          <div class="f15px mgtb25"><a href="address-1.html" class="address-btn">新增地址 + </a></div>
+      </div>
+       <div class="w100line"></div>
+      <div class="address-list">
+
+        <div class="address-block">
+          <a href="javascript:;" style="display: block;">
+            <div class="col-xs-10 p0">
+              <div class="address-name f15px">马云的媳妇</div>
+              <div class="address-phone f14px">13189767135</div>
+              <div class="address-note f12px">深圳市福田区益田路3008号皇都广场A座807</div>
+            </div>
+            <div class="col-xs-2 p0 " style="height: 17vh;"><span class="addchageicon"></span></div>
+            <div class="clearfix"></div>
+          </a>
+          <div class="col-xs-12 text-right"><a href="address-2.html" class="bcf f14px">编辑</a></div>
+        </div>
+
+       <div class="address-block">
+          <a href="javascript:;" style="display: block;">
+            <div class="col-xs-10 p0">
+              <div class="address-name f15px">马云的媳妇</div>
+              <div class="address-phone f14px">13189767135</div>
+              <div class="address-note f14px">深圳市福田区益田路3008号皇都广场A座807</div>
+            </div>
+            <div class="col-xs-2 p0 " style="height: 17vh;"><span class="addchageicon"></span></div>
+            <div class="clearfix"></div>
+          </a>
+          <div class="col-xs-12 text-right"><a href="address-2.html" class="bcf f14px">编辑</a></div>
+        </div>
+
+       
+
+      </div>
+       
+    
+    
+    
+   </div>
+
+   <script>
+    $(document).ready(function(){
+      $('.address-block a').click(function(){
+        $(this).find('span').toggleClass('addchageicon-2').siblings('span').removeClass('addchageicon-2');
+
+      })
+
+    })
+
+   </script>
+
+
+  
+  </body>
+</html>

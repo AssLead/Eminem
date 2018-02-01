@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/calendar.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calendar.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <section class="fixed-nav-left">
+    <div class="fnl-header"><img src="img/header.jpg"></div>
+    <div class="fnl-note text-center">微商会总后台管理</div>
+    <div class="fnl-list">
+      <ul>
+        <li><a href="index.html" class="active"><span><img src="img/fnl-1.png" alt=""></span>协会管理</a></li>
+        <li><a href="shop.html"><span><img src="img/fnl-2.png" alt=""></span>积分商城管理</a></li>
+        <li><a href=""><span><img src="img/fnl-1.png" alt=""></span>金融板块管理</a></li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <section class="right-main">
+    <div class="r-top"><span class="pull-right"><img src="img/header.jpg" class="r-top-headimg">管理员：某某 <a href="">注销</a></span> 2017-11-24 礼拜五 12：03</div>
+    <div class="first-title">协会成员详情</div>
+
+    <div class="r-chage">
+
+      <form class="search" id="search" method="post" action="#">
+        <p class="pull-left pd15">会员级别:
+          <select  class="form-control" style="width:140px; display: initial;">
+          <option value="">请选择</option>
+          <option value="">会长</option>
+          <option value="">常务副会长</option>
+          <option value="">副会长</option>
+          <option value="">常务理事</option>
+          <option value="">理事</option>
+          <option value="">会员</option>
+          <option value="">游客</option>
+        </select>
+      </p>
+        <div class="pull-left table-time pd15">
+               创建时间
+          <input type="text" id="dt" class="form-control" placeholder="选择日期" style="display: initial;">
+          <div id="dd"></div>
+          </div>
+          <div class="pull-left pd15">
+
+        性别 
+          <select  class="form-control" style="width:140px; display: initial;">
+          <option value="">请选择</option>
+          <option value="">男</option> 
+          <option value="0">女</option>
+        </select>
+                  </div>
+
+          <input name="search" class="r-search" type="text" value="" placeholder="搜索"> 
+          <input type="submit" class="r-chage-btn" value="查询">
+      </form>
+     
+
+    </div>
+	<div class="pd15">
+    <div class="table-list">
+      <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>用户名</th>
+              <th>性别</th>
+              <th>会员等级</th>
+              <th>婚否</th>
+              <th>从事行业</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>测试用户</td>
+              <td>男</td>
+              <td>会员</td>
+              <td>已婚</td>
+              <td>互联网</td>
+              <td><a href="javascript:;">删除</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>测试用户</td>
+              <td>男</td>
+              <td>会员</td>
+              <td>已婚</td>
+              <td>互联网</td>
+              <td><a href="javascript:;">删除</a></td>
+            </tr>
+            <tr>
+               <td>3</td>
+              <td>测试用户</td>
+              <td>男</td>
+              <td>会员</td>
+              <td>已婚</td>
+              <td>互联网</td>
+              <td><a href="javascript:;">删除</a></td>
+            </tr>
+            <tr>
+               <td>4</td>
+              <td>测试用户</td>
+              <td>男</td>
+              <td>会员</td>
+              <td>已婚</td>
+              <td>互联网</td>
+              <td><a href="javascript:;">删除</a></td>
+            </tr>
+            <tr>
+               <td>5</td>
+              <td>测试用户</td>
+              <td>男</td>
+              <td>会员</td>
+              <td>已婚</td>
+              <td>互联网</td>
+              <td><a href="javascript:;">删除</a></td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    
+    </div>
+      <div class="form-group col-sm-12 text-center">
+              <a href="edit-xh.html" class="btn btn-default addbtm1" style="background:#119e92; color: #fff; border-radius: 8px;">返回</a>
+            </div>
+        </section>
+   <script>
+    $('#ca').calendar({
+        width: 320,
+        height: 320,
+        data: [
+			{
+			  date: '2015/12/24',
+			  value: 'Christmas Eve'
+			},
+			{
+			  date: '2015/12/25',
+			  value: 'Merry Christmas'
+			},
+			{
+			  date: '2016/01/01',
+			  value: 'Happy New Year'
+			}
+		],
+        onSelected: function (view, date, data) {
+            console.log('view:' + view)
+            alert('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+
+    $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+		format: 'yyyy-mm-dd',
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+</script>
+
+  </body>
+</html>
